@@ -28,7 +28,6 @@ def gethour():
 
 def setWall():
     while True:
-        sleep(30) # at 30 seconds
         hour = int(gethour())
 
         if (hour >= 0 and hour < 5):
@@ -46,7 +45,7 @@ def setWall():
         if (hour >= 18):
             os.system(f"feh --bg-scale {default}/{path_wallpaperFolder}/{allWall[3]}")
             print(f"Hour: {hour}, changed to {allWall[3]}")
-
+        sleep(1800) # at 30 minutes
 
 c = thisPathExist(path_wallpaperFolder)
 if c == False:

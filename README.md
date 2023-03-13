@@ -1,6 +1,6 @@
 # Wallpaper real time script #
-
-Este script muda o seu papel de parede de acordo com o hoŕario, dividido em 4 partes do dia:
+![](example.png)
+Este script muda o seu papel de parede de acordo com o horário, dividido em 4 partes do dia:
  - Madrugada (midnight).
  - Manhã (morning).
  - Tarde (afternoon).
@@ -8,27 +8,34 @@ Este script muda o seu papel de parede de acordo com o hoŕario, dividido em 4 p
 
 ## Dependências: ##
 
- - feh (3.9.1>)
- - Python (3.10.9>) obs: não testado em versões abaixo disso
+ - [feh](https://wiki.archlinux.org/title/Feh) (3.9.1>)
+ - [Python](https://www.python.org/) (3.10.9>) obs: não testado em versões abaixo disso
 
-No ArchLinux:
+No [ArchLinux](https://wiki.archlinux.org/title/Pacman):
 ```
 # pacman -S python feh
 ```
+
+No [Debian]():
+```
+# apt-get update
+# apt-get install feh
+```
+Para instalar o Python siga esta [instruções](https://linuxnightly.com/install-python-debian/).
 
 --------------------------
 ## Como instalar ##
 
 Você pode clonar este repositório com apenas o comando:
 ```
-$ git clone repo
+$ git clone https://github.com/DeividWilly/wallpaper_time_script.git
 ```
 ou baixar manualmente o zip.
 
 Copie o arquivo `wall.py` para a pasta de preferência:
 ```
 $ mkdir ~/scripts
-$ cp ~/wallpaper_time/wall.py ~/scripts/wall.py
+$ cp ~/wallpaper_time_script/wall.py ~/scripts/wall.py
 ```
 ------------------
 ## Configuração ##
