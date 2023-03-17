@@ -8,6 +8,8 @@ from time import sleep
 path_wallpaperFolder = ""
 # it is not necessary to write since /home, only the normal path from ~ #
 
+time = 1800 # set the time loop in seconds
+
 midnight = ""
 morning = ""
 afternoon = ""
@@ -45,7 +47,7 @@ def setWall():
         if (hour >= 18):
             os.system(f"feh --bg-scale {default}/{path_wallpaperFolder}/{allWall[3]}")
             print(f"Hour: {hour}, changed to {allWall[3]}")
-        sleep(1800) # at 30 minutes
+        sleep(time) # at 30 minutes
 
 c = thisPathExist(path_wallpaperFolder)
 if c == False:
