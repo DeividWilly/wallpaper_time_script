@@ -7,9 +7,10 @@ from time import sleep
 #               Basic Config                    #
 
 path_wallpaperFolder = "Pictures/wallpapers"
-time = 10
+time = 1800
 
 #################################################
+
 allWall = []
 username = os.getlogin()
 default = f"/home/{username}"
@@ -24,10 +25,5 @@ def setWall():
         n = random.randint(0,len(allWall)-1)
         os.system(f"feh --bg-scale {default}/{path_wallpaperFolder}/{allWall[n]}")
         sleep(time)
-
-#print(allWall)
-#print(default)
-#print(f"{default}/{path_wallpaperFolder}/")
-#print(configured_path)
 
 setWall()
